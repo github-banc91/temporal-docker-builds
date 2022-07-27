@@ -47,7 +47,7 @@ jobs:
         id: meta_server
         uses: docker/metadata-action@v3
         with:
-          images: temporaliotest/server
+          images: ghcr.io/github-banc91/server
           tags: |
             type=sha,format=short,event=branch
             latest
@@ -69,7 +69,7 @@ jobs:
         id: meta_admin_tools
         uses: docker/metadata-action@v3
         with:
-          images: temporaliotest/admin-tools
+          images: ghcr.io/github-banc91/admin-tools
           tags: |
             type=sha,format=short,event=branch
             latest
@@ -109,7 +109,7 @@ jobs:
         id: meta_auto_setup
         uses: docker/metadata-action@v3
         with:
-          images: temporaliotest/auto-setup
+          images: ghcr.io/github-banc91/auto-setup
           tags: |
             type=sha,format=short,event=branch
             latest
